@@ -58,6 +58,5 @@ In such case:
 - telegraf syslog plugin in UDF mode (at the moment in TCP/TLS mode there is not way to disable octet framing requirement - ie., RFC5425)
 - syslog facility will be fixed (depending on the `syslog-facility` option)
 
-_TBD_: create an alternative setup for this setup.
 
 ---
