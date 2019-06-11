@@ -1,0 +1,12 @@
+dbrp "telegraf"."autogen"
+
+stream
+    |from()
+        .measurement('syslog')
+        .truncate(1ms)
+        .where(lambda: "appname" == 'kernel')
+        .where(lambda: "message" =~ /sacrifice/)
+    @example()
+    |influxDBOut()
+        .database('telegraf')
+        .measurement('k8s')
