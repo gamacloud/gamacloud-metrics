@@ -29,10 +29,6 @@ kubectl port-forward svc/chronograf -n logging 8888:80
 
 Go to [localhost:8888](http://localhost:8888) now!
 
-## Run with local up cluster
-
-_TBD_.
-
 ## Developing the Kapacitor UDF
 
 File `docker-compose.yaml` is useful during the development and debugging of the Kapacitor UDF.
